@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #172033;
+  line-height: 1.6;
+}
+
+header {
+  background: #101827;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 15px;
+  background: white;
+}
+
+nav a, footer a {
+  color: #155eef;
+  text-decoration: none;
+}
+
+main {
+  width: min(900px, 92%);
+  margin: 28px auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.tool {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 22px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 14px 0 6px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button, .download {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 12px 18px;
+  background: #155eef;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+button:hover, .download:hover {
+  background: #124bc0;
+}
+
+.result {
+  overflow-wrap: anywhere;
+  background: #eff6ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.stats {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none !important;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background: #101827;
+  color: white;
+}
+
+footer a {
+  color: #bfdbfe;
+}
+
+@media (max-width: 600px) {
+  .tool {
+    padding: 17px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+}

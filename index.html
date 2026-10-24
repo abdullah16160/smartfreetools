@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free online image compressor, word counter and percentage calculator.">
+  <title>SmartFreeTools - Free Online Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>SmartFreeTools</h1>
+    <p>Simple, useful tools — free for everyone.</p>
+  </header>
+
+  <nav>
+    <a href="#image">Image Compressor</a>
+    <a href="#words">Word Counter</a>
+    <a href="#percentage">Percentage Calculator</a>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>Free Online Tools</h2>
+      <p>Useful tools to make everyday tasks easier.</p>
+    </section>
+
+    <section class="tool" id="image">
+      <h2>Image Compressor</h2>
+      <p>Choose an image and compress it in your browser.</p>
+      <label for="imageFile">Select image</label>
+      <input type="file" id="imageFile" accept="image/*">
+
+      <label for="quality">Image quality: <span id="qualityValue">70%</span></label>
+      <input type="range" id="quality" min="20" max="95" value="70">
+
+      <button id="compressButton">Compress Image</button>
+      <p id="imageResult" class="result" aria-live="polite"></p>
+      <a id="downloadImage" class="download hidden" download="compressed-image.jpg">Download Image</a>
+    </section>
+
+    <section class="tool" id="words">
+      <h2>Word Counter</h2>
+      <p>Count the words and characters in your text.</p>
+      <label for="textInput">Your text</label>
+      <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+      <div class="stats">
+        <p>Words: <strong id="wordCount">0</strong></p>
+        <p>Characters: <strong id="charCount">0</strong></p>
+      </div>
+      <button id="clearText">Clear Text</button>
+    </section>
+
+    <section class="tool" id="percentage">
+      <h2>Percentage Calculator</h2>
+      <label for="part">Your value</label>
+      <input id="part" type="number" placeholder="e.g. 25">
+
+      <label for="whole">Total value</label>
+      <input id="whole" type="number" placeholder="e.g. 200">
+
+      <button id="calculatePercentage">Calculate</button>
+      <p id="percentageResult" class="result" aria-live="polite"></p>
+    </section>
+
+    <section class="tool" id="about">
+      <h2>About Us</h2>
+      <p>SmartFreeTools provides simple browser-based tools for everyday tasks.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> SmartFreeTools</p>
+    <a href="#about">About</a>
+  </footer>
+</body>
+</html>
